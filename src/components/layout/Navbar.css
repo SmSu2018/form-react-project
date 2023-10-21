@@ -1,0 +1,25 @@
+.dropdown:hover >,
+.dropend:hover > {
+  display: block;
+  margin-top: -0.125em;
+}
+.navbar-bg {
+  background-color: #347aeb;
+}
+.root-dropdown > *:first-child {
+  color: white !important;
+}
+.navbar-default {
+  color: white !important;
+}
+.nested-dropdown {
+  margin-left: 8px;
+}
+@media screen and (min-width) {
+  .dropend:hover > {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -0.125em;
+  }
+}
