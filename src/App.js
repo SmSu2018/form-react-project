@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+
+
+import "./App.css";
+import Header from "./components/Header/Header";
+
+// const navigationData = [
+//   {
+//     name: "Home",
+//     subLink: [],
+//     href: "/"
+//   },
+//   {
+//     name: "About",
+//     subLink: [
+//       {
+//         name: "Services",
+//         subLink: [
+//           { name: "Service A", subLink: [], href: "/" },
+//           { name: "Service B", subLink: [], href: "/" }
+//         ]
+//       },
+//       { name: "Info", subLink: [] }
+//     ],
+//     href: "/"
+//   },
+//   {
+//     name: "Contact",
+//     subLink: [
+//       { name: "Call", subLink: [], href: "/" },
+//       { name: "Mail", subLink: [], href: "/" }
+//     ],
+//     href: "/"
+//   }
+// ];
+// const profileMockData = {
+//   name: "Profile",
+//   subLink: [{ name: "LogOut", subLink: [], href: "/" }, { name: "View Profile", subLink: [], href: "/" }]
+// };
+
+const App = () => {
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{'width':'100%','height':'100%'}}>
+    <Header />
     </div>
   );
-}
+};
 
 export default App;
