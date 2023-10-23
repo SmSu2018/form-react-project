@@ -4,6 +4,8 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./Navbar.css";
 
+//git config --global credential.useHttpPath true
+
 const navigationData = [
   {
     name: "Home",
@@ -61,7 +63,7 @@ const SubNavItem = ({ item }) => {
   if (item.subLink.length === 0) {
     return (
       <Nav.Link key={item.name} href={item.href} style={{ marginLeft: "10px" }}>
-        {item.name}
+         {item.name}
       </Nav.Link>
     );
   } else {
@@ -85,8 +87,8 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="navbar-bg">
       <Container>
-        <Navbar.Brand href="#home" className="navbar-default">
-          Company Logo
+        <Navbar.Brand  href="#home" className="navbar-default">
+         <img src={`https://www.sherwin-williams.com/content/experience-fragments/sherwin/tag/aem-main/language-masters/en/site/global_gateway/global-gateway/master.coreimg.png/structure/jcr%3acontent/root/container_1596074899/container_457167789/navigation/1694608032996/sw-logo-header-up.png`}></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
